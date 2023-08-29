@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15%;
+    background-color: #212121;
+}
+
+.logo, .imagenLogo, .textoLogo {
+    display: inline-block;
+}
+
+.logo{
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 70px;
+    font-family: 'Lilita One', cursive;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.imagenLogo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.textoLogo {
+    font-size: 60px;
+    font-weight: 500px;
+    font-family: 'Lilita One', cursive;
+}
+
+.navLink li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+.contacto {
+    background-color: #5c5470;
+    padding: 10px 10px;
+    border-radius: 50px ;
+}
+
+main{
+    background-image: url(../img/patitas.png);
+    background-position: center;
+    background-repeat:repeat-y repeat-x;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedorBienvenida {
+    
+    margin: 30px 10px;
+    border-radius: 50px;
+    background-color: #212121;
+    width: 600px;
+    height: 300px;
+    color:#fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.uno {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.uno h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.uno img{
+    width: 150px;
+}
+
+.dos {
+    display: flex;
+    padding: 0px 30px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dos h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: -40px;
+}
+
+.dos p{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    width: 70%;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 50px 50px 0 0;
+}
+
+.seccion h3{
+    color:#fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 0 30px;
+}
+
+.grande h3 {
+    color:#fafafa;
+    font-size: 45px;
+    font-weight: 10px;
+    font-style: normal;
+    font-family: 'Lilita One', cursive;
+    padding: 0 30px;
+}
+
+.catalogo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+    width: 70%;
+    height: 300px;
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 30px;
+}
+
+.catalogo img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.catalogoPag {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #eeeeee;
+    width: 70%;
+    height: 2000px;
+    margin-bottom: 20px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin-bottom: -400px;
+}
+
+.buscador label{
+    color:#212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.buscador input {
+    width: 500px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.producto {
+    width: 300px;
+    height: 500px;
+    margin: 20px 0;
+    border-radius: 0 0 30px 30px;
+    background-color: #212121;
+}
+
+.producto img {
+    width: 300px;
+}
+
+.tituloProducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+}
+
+.tituloProducto h3 {
+    color:#fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0 30px;
+}
+
+.descripcionProducto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    margin-top: -15px;
+}
+
+.descripcionProducto p {
+    color:#fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 0 30px;
+    margin: 5px 0;
+}
+
+.bloqueContacto {
+    border-radius: 50px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #212121;
+    width: 70%;
+    height: 1000px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.textoContacto {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+
+.textoContacto h2 {
+    color: #fafafa;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textoContacto, .mediosContacto h3 {
+    color: #fafafa;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formularioContacto {
+    background-color: #eeeeee;
+    border-radius: 50px;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.labelFormulario {
+    display: flex;
+    width: 20%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-flow: column wrap;
+}
+
+.labelFormulario label{
+    color: #212121;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inputFormulario {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.inputFormulario input {
+    display:flex;
+    justify-content: center;
+    text-align: flex-end;
+    border-radius: 50px;
+    width: 70%;
+    height: 35px;
+    font-size: 25px;
+    color: #212121;
+}
+
+.botonFormulario{
+    background-color: #212121;
+    color: #fafafa;
+    padding: 20px 20px;
+    border-radius: 50px ;
+    font-size: 25px;
+    font-weight: 10px;
+    font-family: 'Lilita One', cursive;
+    margin-bottom: 20px;
+}
+
+
+.sucursalyRedes {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.sucursalyRedes p{
+    color: #fafafa;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sucursalyContacto {
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.redes {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
+    width:50px;
+    margin: 0 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #212121;
+    height: 200px;
+    color:#fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer div{
+    display: inline-block;
+}
+
+.copyright {
+    width:33%;
+    order:2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.copyright img{
+    width:20px;
+    margin: -2px 5px 0 0;
+}
+
+.datos {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    order:3;
+    justify-content: flex-end;
+}
+
+.datos p{
+    margin-bottom: 10px;
+}
+
+
+
+
